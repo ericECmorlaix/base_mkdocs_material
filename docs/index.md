@@ -1,6 +1,6 @@
 Ceci est la page d'accueil d'un site de base généré avec le framework MkDocs et le thème Material.
 
-> Pour voir le code [MarkDown](https://fr.wikipedia.org/wiki/Markdown){target=_blank} sous jacent, cliquer sur le crayon en haut à droite.
+> Pour voir le code [MarkDown](https://fr.wikipedia.org/wiki/Markdown){target=_blank} sous jacent, cliquer sur l'oeil en haut à droite.
 
 # Voici un titre de niveau 1
 ## Et voici un titre de niveau 2
