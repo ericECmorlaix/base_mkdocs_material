@@ -22,13 +22,13 @@ docs_dir: docs
 # Structure du menu principal de navigation, chemins relatifs au dossier docs_dir
 nav: 
   - La page d'accueil : index.md
-  - Un notebook jupyter : Notebook.ipynb
+  - Une page de ressources : ressources.md
   # Référencer vos autres pages ci-dessus...
 
 # Configuration du thème https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
 theme:
     name: material # autres thèmes : https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
-    custom_dir: overrides #  
+    # custom_dir: overrides #  
     font: false  # RGPD ; pas de fonte Google
     language: fr # français
     icon:
@@ -54,6 +54,7 @@ theme:
     features: 
         - navigation.instant # active XHR https://fr.wikipedia.org/wiki/XMLHttpRequest
         - navigation.tabs # Menu de navigation horizontal sous l'en-tête sauf sur appareil mobile
+        - navigation.expand
         # - navigation.tabs.sticky # Menu de navigation horizontal collant
         - navigation.top # bouton pour remonter tout en haut de la page
         - toc.integrate # Table Of Content, table des matières intégrée dans la barre verticale de navigation
@@ -83,7 +84,7 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
     - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
     - pymdownx.snippets             # Inclusion de fichiers externe.
     - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
-        custom_checkbox:    true    #   avec cases d'origine
+        custom_checkbox:    false    #   avec cases d'origine
         clickable_checkbox: true    #   et cliquables.
     - pymdownx.tabbed:              # Onglets coulissants.  === "Onglet"
         alternate_style: true       # Ajout depuis la version 8
@@ -99,15 +100,16 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
 
 plugins:
   - search # Inclure une barre de recherche
-  - mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
-      include_source: True # Inclu une copie du fichier source.ipynb (ou .py) dans le dossier de la page sur le site pour son téléchargement
-
+  # - mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
+  #     kernel_name: python3
+  #     execute: False
+  #     include_source: True
 
 ### Configuration d'une licence
 # Information de droit d'auteur qui s'affiche dans le pied de page pour toutes les pages du site
 copyright: >
     Document partagé par <a href="https://github.com/ericECmorlaix" target="_blank">Eric MADEC</a>
-    &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
+    &copy; 2023 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
     <br> Illustrations par <a href="https://undraw.co/" target="_blank">UnDraw</a>
 
 
