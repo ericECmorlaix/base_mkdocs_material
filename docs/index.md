@@ -1,6 +1,6 @@
 Ceci est la page d'accueil d'un site de base généré avec le framework MkDocs et le thème Material.
 
-> Pour voir le code MarkDown sous jacent, cliquer sur le crayon en haut à droite.
+> Pour voir le code [MarkDown](https://fr.wikipedia.org/wiki/Markdown){target=_blank} sous jacent, cliquer sur le crayon en haut à droite.
 
 # Voici un titre de niveau 1
 ## Et voici un titre de niveau 2
@@ -9,13 +9,13 @@ Avec un retour à la ligne sans saut de ligne.
 
 Et avec un retour à la ligne avec saut de ligne.
 
-## Un lien :
+## Un lien
 Source pour [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 
-## Une image :
+## Une image
 ![illustration mkdocs-material](https://squidfunk.github.io/mkdocs-material/assets/images/illustration.png)
 
-## Une liste :
+## Une liste
 - Toto ;
 - Titi ;
 - Tata...
