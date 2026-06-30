@@ -29,6 +29,7 @@ jobs:
       # - run: pip install mkdocs-mermaid2-plugin 
       # - run: pip install mkdocs-exclude
       
+      # - run: pip install mkdocs-kroki-plugin
       # - run: pip install mkdocs-jupyter
       
       # C'est ici qu'il faut ajouter si besoin
